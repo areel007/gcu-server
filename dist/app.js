@@ -13,7 +13,11 @@ require("./config/db");
 const routes_1 = __importDefault(require("./routes"));
 const app = (0, express_1.default)();
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://gcu-mobile.surge.sh"],
+    origin: [
+        "http://localhost:5173",
+        "https://gcu-mobile.surge.sh",
+        "http://gcu-mobile.surge.sh",
+    ],
     methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
