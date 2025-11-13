@@ -11,7 +11,7 @@ import routes from "./routes";
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://gcu-mobile.surge.sh"],
+  origin: ["*"],
   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
