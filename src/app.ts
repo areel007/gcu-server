@@ -12,7 +12,7 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    "http://localhost:3000", // ✅ dev
+    "http://localhost:5173", // ✅ dev
     "https://gcu-mobile.surge.sh", // ✅ deployed frontend
   ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
