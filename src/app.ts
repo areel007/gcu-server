@@ -11,7 +11,7 @@ import routes from "./routes";
 const app = express();
 
 const corsOptions = {
-  origin: ["*"],
+  origin: ["http://localhost:5173", "https://gcu-mobile.surge.sh"],
   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
@@ -19,7 +19,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // IMPORTANT
+// app.options("*", cors(corsOptions)); // IMPORTANT
 
 // middlewares
 app.use(express.json());
